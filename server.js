@@ -7,6 +7,6 @@ connectDB()
 app.use(express.json())
 
 app.use('/files', require('./routes/fileRoute'))
-
+app.use('/', express.static('files'))
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
