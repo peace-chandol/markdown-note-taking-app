@@ -54,7 +54,7 @@ const FileListComponent = () => {
                 <div key={file.id} className="single-file-list">
                     <p className="file-title">{file.title}</p>
                     {/* <p>{file.filename.split('_').slice(1).join('_')}</p> */}
-                    <button onClick={() => getFile(file.filename)} className='file-name'>View</button>
+                    <button onClick={() => getFile(file.filename)} className='view-btn'>View</button>
                     <button onClick={() => deleteBlog(file.filename)} className='delete-btn' >Delete</button>
                 </div>
             ))}

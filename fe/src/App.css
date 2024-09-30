@@ -82,12 +82,21 @@ h1, h2 {
     text-decoration: underline;
 }
 
-.single-file-list .file-name {
+.single-file-list button {
     cursor: pointer;
-    background-color: #16423C;
     border: none;
     padding: 0.6rem 0.8rem;
     color: white;
     font-size: 0.8rem;
     border-radius: 5px;
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+.single-file-list .view-btn {
+    background-color: #16423C;
+}
+
+.single-file-list .delete-btn {
+    background-color: #821131;
 }
