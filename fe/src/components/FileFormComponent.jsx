@@ -16,6 +16,7 @@ const FileFormComponent = () => {
                 }
             })
             clearForm()
+            window.location.reload()
         } catch (err) {
             console.error(err)
         }
