@@ -6,7 +6,7 @@ function App() {
 
     return (
         <>
-            <h1>Markdown Note Taking App</h1>
+            <h1 className='title'>- Markdown Note Taking App -</h1>
             <FileFormComponent />
             <FileListComponent />
         </>

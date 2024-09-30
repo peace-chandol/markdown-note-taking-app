@@ -1,45 +1,93 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #C4DAD2;
+}
+
+h1, h2 {
+    color: #16423C;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.form-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-component div {
+    margin: 0.8rem 0;
+    color: #16423C;
+}
+
+.form-component h2 {
     text-align: center;
 }
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+.form-component label {
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+.form-component input {
+    outline: none;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    margin: 0 1rem;
+    width: 75%;
 }
 
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+.form-component button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    background-color: #16423C;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
 }
 
-@keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+.file-list-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
-    }
+.single-file-list {
+    background-color: #6A9C89;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: white;
 }
 
-.card {
-    padding: 2em;
+.single-file-list .file-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-decoration: underline;
 }
 
-.read-the-docs {
-    color: #888;
+.single-file-list .file-name {
+    cursor: pointer;
+    background-color: #16423C;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 5px;
 }

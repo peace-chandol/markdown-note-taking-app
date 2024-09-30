@@ -35,9 +35,9 @@ const FileFormComponent = () => {
     }
 
     return (
-        <div>
+        <div className="form-component">
             <form onSubmit={handleSubmitForm}>
-                <h1>File Form Component</h1>
+                <h2>Add File</h2>
                 <div>
                     <label>Title : </label>
                     <input type="text" onChange={handleTitle} value={title} />

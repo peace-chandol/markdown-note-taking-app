@@ -26,14 +26,13 @@ const FileListComponent = () => {
     }
 
     return (
-        <div>
-            <h1>File List Component</h1>
+        <div className="file-list-component">
+            <h2>File List</h2>
             {filename.map((file) => (
-                <div key={file.id}>
-                    <p>{file.title}</p>
-                    <p>{file.filename.split('_').slice(1).join('_')}</p>
-                    <p onClick={getFile}>{file.filename}</p>
-                    <hr />
+                <div key={file.id} className="single-file-list">
+                    <p className="file-title">{file.title}</p>
+                    {/* <p>{file.filename.split('_').slice(1).join('_')}</p> */}
+                    <button onClick={getFile} className='file-name'>{file.filename}</button>
                 </div>
             ))}
         </div>
